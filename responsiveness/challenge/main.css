@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: white;
+}
+
+.purplebox {
+  background-color: purple;
+  border: 1px solid black;
+}
+
+.purplebox h2 {
+  background-color: purple;
+}
+
+.blackbox {
+  background-color: black;
+}
+
+header {
+  height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      grid-template-areas: "nology empty link1 link2 link3";
+  background-color: black;
+}
+
+header #nology {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nology;
+}
+
+header #empty {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: empty;
+}
+
+header #link1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: link1;
+}
+
+header #link2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: link2;
+}
+
+header #link3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: link3;
+}
+
+#projects {
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      grid-template-areas: "image aboutme" "image hobbies" "image contact" "employment employment" "education education";
+  -ms-grid-columns: 2fr 8fr;
+      grid-template-columns: 2fr 8fr;
+  -ms-grid-rows: 1fr 1fr 1fr 3fr 2fr;
+      grid-template-rows: 1fr 1fr 1fr 3fr 2fr;
+  grid-gap: 20px;
+}
+
+#projects #photo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: image;
+  height: 30vh;
+  width: 30vh;
+  margin: auto;
+}
+
+#projects #photo img {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+#projects #aboutme {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: aboutme;
+}
+
+#projects #hobbies {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: hobbies;
+}
+
+#projects #contact {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: contact;
+}
+
+#projects #employment {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: employment;
+}
+
+#projects #education {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: education;
+}
+
+#projects article h2 {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
+  #projects {
+    padding-top: 20px;
+        grid-template-areas: "image"  "aboutme" "hobbies" "contact" "employment" "education";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 3fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 2fr;
+  }
+}
+/*# sourceMappingURL=main.css.map */
