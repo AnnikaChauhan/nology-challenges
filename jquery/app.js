@@ -1,4 +1,5 @@
 const onload = () => {
+    console.log('test');
     const $firstDiv = $('div').first();
     const $newDiv = $('<div></div>').text('new div');
     
