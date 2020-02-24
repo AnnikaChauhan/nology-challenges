@@ -1,5 +1,9 @@
 export default class Animal {
-    constructor(name,age,species,height,placeOfOrigin) {
+    constructor(name,
+        age,
+        species,
+        height,
+        placeOfOrigin) {
         this.name = name;
         this.age = age;
         this.species = species;
