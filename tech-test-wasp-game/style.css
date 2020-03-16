@@ -1,0 +1,20 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wasp {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+.wasp h3 {
+    font-size: 20px;
+}
+
+.wasp h4 {
+    font-size: 20px;
+}
